@@ -1,0 +1,77 @@
+.card {
+  border: 1px solid #a39e9e;
+  justify-content: space-evenly;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: 0;
+  overflow: hidden;
+  margin: 10px;
+  text-align: center;
+  background: #fff;
+  position: relative;
+}
+
+.card-image-wrapper {
+  position: relative;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 76, 59, 0.5); /* Adjust color and opacity as needed */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-image-wrapper:hover .overlay {
+  opacity: 1;
+}
+
+.card-content {
+  padding: 10px;
+  z-index: 1; /* Ensure card content stays on top of overlay */
+}
+
+.card-content h3 {
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: #ff5733; /* Adjust the color as per your design */
+}
+
+.card-content p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.card-content .author {
+  font-size: 0.9em;
+  color: #999;
+}
+
+@media (max-width: 1024px) {
+  .card-content h3 {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-content h3 {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-content h3 {
+    font-size: 0.9em;
+  }
+}
