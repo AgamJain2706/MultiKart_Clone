@@ -15,7 +15,7 @@ const Gallery = () => {
   const settings = {
     slidesToShow: 3,
     slidesToScroll: 1, // Scroll two slides at a time
-    arrows: true, // Enable arrows for navigation
+    arrows: false, // Enable arrows for navigation
     autoplay: true,
     autoplaySpeed: 3000, // Speed of the automatic sliding (2 seconds)
     pauseOnHover: true,
